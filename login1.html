@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("data:image/jpeg;base64,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"); 
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+img
+{
+  border-radius: 50%;
+  height: 10cm;
+  width: 200;
+  
+}
+h2{
+  text-align: center;
+  color: #04AA6D;
+}
+.container{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFGFk3lshOOe14Q0xHbodSoGKL6t7JDAXtyg&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+</head>
+<body>
+
+<form action="/login_verify" method="post">
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <div class="alert alert-info">
+      {{res}}
+     </div>
+  <input type="submit" value="Login">
+  
+  </div>
+  <table align="center">
+    <tr>
+      <td><p> <b style="color: red;">For administrator login</b> </p></td>
+      <td><div class="container" style="background-color:#f1f1f1">
+        <a href="/login1"> <button type="button" class="cancelbtn">clickhere</button></a>
+      </div>
+      </td>
+    </tr>
+  </table>
+  </div>
+</form>
+
+</body>
+</html>
