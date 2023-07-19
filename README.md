@@ -3,6 +3,7 @@ This simple hospital appointment system project is written in Python. The projec
 Hospital Appointment Booking System
 The Hospital Appointment Booking System is a Python project designed to facilitate appointment booking and management in a hospital setting. This application is developed using Python and may include the use of web frameworks or libraries for server-side functionality.
 
+
 Features
 Appointment Booking: Patients can schedule appointments with doctors through a web-based interface.
 Appointment Display: The system allows staff to view the scheduled appointments.
